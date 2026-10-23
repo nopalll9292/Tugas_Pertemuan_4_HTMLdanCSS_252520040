@@ -1,0 +1,102 @@
+/* =====================================================
+   profil.css - Halaman Profil Diri
+   Nama : Muhammad Naufal Dawwas
+   NIM : 252520040
+   Kelas : TI-A 3
+   ===================================================== */
+
+/* Box-sizing: width sudah termasuk padding dan border */
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- Selector ELEMEN: pengaturan dasar halaman ---------- */
+body {
+    font-family: Arial, sans-serif;      /* jenis huruf + cadangan */
+    background-color: #e6efe9;           /* warna format HEX */
+    color: rgb(51, 65, 85);              /* warna format RGB */
+    line-height: 1.7;                    /* jarak antarbaris */
+}
+
+/* ---------- Selector CLASS: kotak utama ---------- */
+.kotak {
+    width: 560px;                        /* lebar tetap */
+    margin: 40px auto;                   /* auto = berada di tengah halaman */
+    padding: 32px;                       /* ruang di dalam kotak */
+    background-color: white;             /* warna format NAMA */
+    border: 2px solid #b7cfc2;
+    border-radius: 14px;                 /* sudut membulat */
+    box-shadow: 0 6px 18px rgba(15, 60, 45, 0.15);   /* warna format RGBA (transparan) */
+}
+
+/* ---------- Selector ID: bagian kepala profil ---------- */
+#profil-header {
+    text-align: center;
+    padding-bottom: 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #b7cfc2;
+}
+
+/* ---------- Selector GRUP: judul h1 dan h2 memakai warna sama ---------- */
+h1, h2 {
+    color: #0f5c4a;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 4px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 24px 0 8px;
+}
+
+/* ---------- Selector CLASS: teks jurusan ---------- */
+.jurusan {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;           /* huruf kapital semua */
+}
+
+/* ---------- Selector TURUNAN: paragraf di dalam .kotak ---------- */
+.kotak p {
+    font-size: 16px;
+    text-align: justify;                 /* teks rata kiri-kanan */
+}
+
+/* Paragraf jurusan tetap rata tengah (class lebih spesifik daripada turunan di atas) */
+.kotak .jurusan {
+    text-align: center;
+}
+
+/* ---------- Daftar keahlian: label sebaris (inline-block #1) ---------- */
+#keahlian {
+    list-style: none;                    /* hilangkan titik daftar */
+    margin: 0;
+    padding: 0;
+}
+
+#keahlian li {
+    display: inline-block;               /* sebaris, tetapi padding & margin bisa diatur */
+    margin: 0 6px 8px 0;
+    padding: 4px 14px;
+    background-color: #d8eadf;
+    color: #0f5c4a;
+    border: 1px solid #b7cfc2;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* ---------- Tombol / tautan (inline-block #2) ---------- */
+.tombol {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    background-color: #0f766e;
+    color: white;
+    text-decoration: none;               /* hilangkan garis bawah tautan */
+    border-radius: 6px;
+}
